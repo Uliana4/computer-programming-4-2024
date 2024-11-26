@@ -6,10 +6,10 @@ jobs:
     steps:
       - name: "My first comand"
         run: echo "Uliana"
-        
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: "show structure"
         run: tree ./
       - run: echo "it works"
+      - run: mkdir /foo/moo/boo/zoo
